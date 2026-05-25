@@ -1,0 +1,33 @@
+============================================================
+OVERALL CRUD CLASSIFIER EVALUATION RESULTS
+============================================================
+
+Total Pairs Processed: 1
+Overall Accuracy: 0.5303
+Total Samples: 66
+
+Per-Class Metrics:
+------------------------------------------------------------
+CREATE     | Precision: 0.8333 | Recall: 0.3659 | Accuracy: 0.5606 | F1: 0.5085 | Support: 41
+READ       | Precision: 0.4390 | Recall: 0.8571 | Accuracy: 0.6061 | F1: 0.5806 | Support: 21
+UPDATE     | Precision: 0.2857 | Recall: 0.5000 | Accuracy: 0.8939 | F1: 0.3636 | Support: 4
+DELETE     | Precision: 0.0000 | Recall: 0.0000 | Accuracy: 1.0000 | F1: 0.0000 | Support: 0
+
+              precision    recall  f1-score   support
+
+      create       0.83      0.37      0.51        41
+        read       0.44      0.86      0.58        21
+      update       0.29      0.50      0.36         4
+      delete       0.00      0.00      0.00         0
+
+    accuracy                           0.53        66
+   macro avg       0.39      0.43      0.36        66
+weighted avg       0.67      0.53      0.52        66
+
+
+Confusion Matrix:
+        create  read  update  delete
+create      15    23       3       0
+read         1    18       2       0
+update       2     0       2       0
+delete       0     0       0       0
